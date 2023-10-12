@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08baaaf6-1c64-4c34-921d-2534bfde5dc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/eyes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/gear_a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/gear_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/gear_c.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +23,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Aquar/OneDrive/Documents/GitHub/Aqua-rise.github.io/Images"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aquar/OneDrive/Documents/GitHub/Aqua-rise.github.io/Images&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aquar\OneDrive\Documents\GitHub\Aqua-rise.github.io\Images" />
