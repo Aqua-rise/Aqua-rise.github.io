@@ -34,14 +34,13 @@ function changeImage() {
 
     if(img){
         if(img.src.includes("gear_a.png")){
-            img.src = "images/gear_b.png"
+            img.src = "img/gear_b.png"
         }
         else if(img.src.includes("gear_b.png")){
-            img.src = "images/gear_c.png"
+            img.src = "img/gear_c.png"
 
         } else {
-            img.src = "images/gear_a.png"
-
+            img.src = "img/gear_a.png"
         }
     }
     else{
