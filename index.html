@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-<style>
-body {
-  background-image: url('Images/bg.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Welcome to My Website</h1>
+    <h1>Here is a Javascript example</h1>
+    <p id="message">Click the button to see a message!</p>
+    <button onclick="changeMessage()">Click Me</button>
+    <p></p>
+    <p></p>
+    <img id="gear" src="images/gear_a.png" alt="gear image" width="150"
+      onclick="changeImage()">
+    <p></p>
+    <button onclick="changeImage()">Change Image</button>
+    <p></p>
+    <button onclick="toggleccSpin()">Spin left</button>
+    <button onclick="toggleSpin()">Spin rignt</button>
+    <p></p>
 
-<h1 style="color:black;position:relative; left:840px; ">I'm waiting...</h1>
-<h1 style="color:black;position:relative; left:840px; ">I'm waiting...</h1>
-
-<img src="Images/eyes.png" alt="Eyes" style="width:256px; height:256px; position:absolute; left:800px;">
-<img src="Images/gear_b.png" alt="Gear" style="width:256px; height:256px; position:absolute; left:-130px; top:-130px">
-
-
-
-</body>
+    <div class="image-container">
+      <img id="heavy"
+        src="https://imgs.search.brave.com/Ll7LcUMNg2gNcKdRplYvPwzAsM24X7RdMEEfTsEXNHY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/TE5HSkM0NGt3M01B/QUFBTS9jZW4wLW1l/bWUuZ2lm.gif"
+        alt="Hidden Image"
+        style="display: none;">
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
