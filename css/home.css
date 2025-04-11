@@ -1,0 +1,98 @@
+body {
+    padding: 2rem;
+    background-image: url("../img/blackstarryeditedbackground.png");
+    image-rendering: crisp-edges;
+    background-size: auto;
+    background-position: bottom;
+}
+
+.container-fluid {
+    background-color: #f1f1f1;
+    margin-top: 4rem;
+    border-top: solid 6px #e69e41;
+    border-left: solid 6px #e69e41;
+    border-right: solid 6px #e69e41;
+    border-bottom: solid 6px #e69e41;
+    border-radius: 4rem;
+    width: 100%;
+    max-width: 960px;
+    padding: 2rem;
+    background-color: rgb(37, 37, 37);
+    box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.2), inset -10px -10px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+.simplecontainer {
+    background-color: #2e2e2e;
+    border-radius: 45px;
+    border: solid 2px rgb(37, 37, 37);
+    max-width: 50em;
+    margin: auto;
+    padding: 1em;
+}
+
+.hovercontainer {
+    background-color: #2e2e2e;
+    border-radius: 45px;
+    border: solid 2px rgb(37, 37, 37);
+    max-width: 50em;
+    margin: auto;
+    padding: 1em;
+    scale: 1;
+    transition: all 0.3s ease;
+}
+
+.hovercontainer:hover {
+    scale: 1.06;
+    transition: all 0.3s;
+}
+
+#navpanel {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    max-width: 250px;
+    border-radius: .5rem;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: white
+}
+
+h2 {
+    color: white
+}
+
+h3 {
+    color: white
+}
+
+p {
+    color: white
+}
+
+a {
+    color: white
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h3 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+}
+
+.dropdown-item{
+    color:white
+}
+
+.dropdown-item:hover{
+    color:black
+}
