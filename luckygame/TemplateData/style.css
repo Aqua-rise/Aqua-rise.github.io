@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* full viewport height */
+    height: 100vh;
     background: url('../../img/blackstarryeditedbackground.png');
     display: flex;
     justify-content: center;
