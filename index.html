@@ -4,7 +4,6 @@
 <head>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="js/common.js"></script>
   <link rel="stylesheet" href="css/home.css" media="screen">
 
   <meta charset="UTF-8" />
@@ -38,6 +37,49 @@
       </ul>
     </nav>
 
+    <!-- Modal with Carousel -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark border-0">
+          <div class="modal-body p-0">
+
+            <!-- Carousel -->
+            <div id="galleryCarousel" class="carousel slide">
+
+              <div class="carousel-indicators" id="carouselIndicators"></div>
+              <div class="carousel-inner" id="carouselInner">
+                <div class="carousel-item active">
+                  <img src="" class="d-block w-100" alt="Image 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="" class="d-block w-100" alt="Image 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="" class="d-block w-100" alt="Image 3">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev"
+                id="ctrlPrev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next"
+                id="ctrlNext">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Header -->
     <h1 id="About" class="mb-4 pt-4 text-center">Montre Jefferson's Online Portfolio</h1>
     <section>
@@ -47,6 +89,7 @@
             <div class="container simplecontainer">
               <p class="fs-3">Github:</p>
               <p class="fs-5">https://github.com/Aqua-rise</p>
+              <p class="fs-5">https://github.com/MontreJefferson</p>
             </div>
           </div>
           <div class="col">
@@ -58,16 +101,32 @@
         </div>
       </div>
       <h3>About me</h3>
-      <p class="fs-5">I have experience working with Java, C#, HTML, Kotlin, Unity, and Unreal Engine.</p>
-      <p class="fs-5 px-5">I graduated from The University of Texas at Tyler in May 2025 with a Bachelor's Degree in Computer Science.</p>
+      <p class="fs-5">I graduated from the University of Texas at Tyler with a bachelor’s degree in Computer Science. I
+        am a creative and dedicated individual with a strong passion for coding and turning innovative
+        ideas into practical solutions.
+      </p>
+      <p class="fs-5">Here is a simple list of many of the tools and technologies that I am experienced with.</p>
+      <p class="fs-5">For general programming language knowlege, I know Java, SQL, and C#.</p>
+      <p class="fs-5">For frontend and general web development, I have experience in HTML, CSS, JavaScript, Typescript,
+        and Angular.</p>
+      <p class="fs-5">For backend development, I have experience in JDBC, RESTful API design, Spring Framework (Spring
+        Boot, Spring MVC, Spring Data, Spring Web, Spring Core).</p>
+      <p class="fs-5">For game development, I'm experienced with Unity (C#), gameplay programming, game design.</p>
     </section>
 
     <h2 id="Projects" class="mb-5 fw-bold" style="text-align: center;">
       Projects
     </h2>
 
+    <p class="fs-5" style="text-align: center;">Below, you can find information about the projects I have worked on,
+      along with images to visualize
+      them.</p>
+    <p class="fs-5" style="text-align: center;">Simply click the project's container to view the images.</p>
+
+
     <!-- Password Puzzle Container-->
-    <div id="Password" class="hovercontainer p-3 mb-5 " style="image-rendering: auto; text-align: center;">
+    <div id="Password" class="hovercontainer p-3 mb-5 " style="image-rendering: auto; text-align: center;"
+      data-bs-toggle="modal" data-bs-target="#galleryModal">
       <h3 class="pb-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-unity"
           viewBox="0 0 16 16">
@@ -86,14 +145,19 @@
       <p class="px-5">The total development time was about 4 months from January to April, spaced out between doing
         classwork that semester.</p>
       <p class="px-5">To my surprise, my project won first place!</p>
-      <p><a href="/puzzlegame/index.html"
+      <p class="px-5">The codebase is available on my personal github account <a href="https://github.com/Aqua-rise"
+          target="_blank"
+          class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fst-italic">
+          Aqua-Rise</a></p>
+      <p><a href="/puzzlegame/index.html" target="_blank" title="Click to open in a new tab"
           class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fst-italic">Play
           it right
           from the browser!</a></p>
     </div>
 
     <!-- Grid Game Container -->
-    <div id="Grid" class="hovercontainer p-3 mb-5" style="image-rendering: auto; text-align: center;">
+    <div id="Grid" class="hovercontainer p-3 mb-5" style="image-rendering: auto; text-align: center;"
+      data-bs-toggle="modal" data-bs-target="#galleryModal">
       <h3 class="pb-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-unity"
           viewBox="0 0 16 16">
@@ -110,15 +174,16 @@
       <p class="px-5">I started working on this project soon after I finished working on Password Puzzle.</p>
       <p class="px-5">Grid Game features 12 minigames, music created by me, various sprites created by me, and tons of
         indie charm.</p>
-      <p class="px-5">In light of there being no hackathon, this game became somewhat of a passion project instead, and
+      <p class="px-5">In light of there being no hackathon, this game became somewhat of a passion project instead,
+        and
         is one that I still work on today every now and then.</p>
       <p class="px-5">I don't know when I'll be done working on this game, because MANY things have changes since I
         originally started development back in 2023.</p>
-      <p class="px-5">It is currently "still in development"</p>
     </div>
 
     <!-- Pocket Soundgrid Container -->
-    <div id="Pocket" class="hovercontainer p-3 mb-5" style="image-rendering: auto; text-align: center;">
+    <div id="Pocket" class="hovercontainer p-3 mb-5" style="image-rendering: auto; text-align: center;"
+      data-bs-toggle="modal" data-bs-target="#galleryModal">
       <h3 class="pb-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-unity"
           viewBox="0 0 16 16">
@@ -128,16 +193,22 @@
         </svg>
         Pocket SoundGrid
       </h3>
-      <p class="px-5">Pocket SoundGrid is a mobile app that I made that functions similarly to other soundboard apps on
+      <p class="px-5">Pocket SoundGrid is a mobile app that I made that functions similarly to other soundboard apps
+        on
         the internet.</p>
       <p class="px-5">Made in about a week, and helped me get familiar with mobile app development.</p>
-      <p class="px-5">I simply wanted a kind of soundboard app that had the things I wanted in it, so I made it myself.
+      <p class="px-5">I simply wanted a kind of soundboard app that had the things I wanted in it, so I made it
+        myself.
       </p>
-      <p class="px-5">Not yet publicly available</p>
+      <p class="px-5">The codebase is available on my personal github account <a href="https://github.com/Aqua-rise"
+          target="_blank"
+          class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fst-italic">
+          Aqua-Rise</a></p>
     </div>
 
     <!-- Lucky Unlucky Container -->
-    <div id="Lucky" class="p-3 mb-5 hovercontainer" style="image-rendering: auto; text-align: center;">
+    <div id="Lucky" class="p-3 mb-5 hovercontainer" style="image-rendering: auto; text-align: center;"
+      data-bs-toggle="modal" data-bs-target="#galleryModal">
       <h3 class="pb-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-unity"
           viewBox="0 0 16 16">
@@ -152,14 +223,19 @@
         marathon of coding from 7:00pm to 7:00am.</p>
       <p class="px-5">Due to the format change, you would only be graded on work done during the 12 hour time window.
       </p>
-      <p class="px-5">So I came up with the fun idea of a probability game where you generate numbers until you get a 1.
+      <p class="px-5">So I came up with the fun idea of a probability game where you generate numbers until you get a
+        1.
       </p>
       <p class="px-5">While I technically could have submitted Grid Game and just added to it during the 12 hours, I
         really wanted to push myself to develop a full game from scratch based on the concept I had for it.</p>
       <p class="px-5">Unfortunetly, I didn't win first place this time, as I ended up getting 4th place, however, the
         satisfaction of developing an entire project in only 12 hours all by myself was more fulfulling than any
         placement I could have gotten.</p>
-      <p><a href="/luckygame/index.html"
+      <p class="px-5">The codebase is available on my personal github account <a href="https://github.com/Aqua-rise"
+          target="_blank"
+          class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fst-italic">
+          Aqua-Rise</a></p>
+      <p><a href="/luckygame/index.html" target="_blank" title="Click to open in a new tab"
           class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fst-italic">Play
           it right
           from the browser!</a></p>
@@ -177,7 +253,8 @@
         </svg>
         Unreal Mountain
       </h3>
-      <p class="px-5">Unreal Moutain was my final project for the Game Development 1 course that I took my sophmore year
+      <p class="px-5">Unreal Moutain was my final project for the Game Development 1 course that I took my sophmore
+        year
         of college.</p>
       <p class="px-5">Throughout the semester, we learned how to use Unreal Engine 4, with the final goal of tieing
         evrything we learned into a final project.</p>

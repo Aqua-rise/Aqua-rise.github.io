@@ -9,10 +9,10 @@ body {
 .container-fluid {
     background-color: #f1f1f1;
     margin-top: 4rem;
-    border-top: solid 6px #e69e41;
-    border-left: solid 6px #e69e41;
-    border-right: solid 6px #e69e41;
-    border-bottom: solid 6px #e69e41;
+    border-top: solid 6px #1c46ff;
+    border-left: solid 6px #1c46ff;
+    border-right: solid 6px #1c46ff;
+    border-bottom: solid 6px #1c46ff;
     border-radius: 4rem;
     width: 100%;
     max-width: 960px;
@@ -45,16 +45,6 @@ body {
 .hovercontainer:hover {
     scale: 1.06;
     transition: all 0.3s;
-}
-
-#navpanel {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    max-width: 250px;
-    border-radius: .5rem;
-    background-color: aliceblue;
 }
 
 h1 {
